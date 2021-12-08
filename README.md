@@ -42,8 +42,34 @@ It is used to display or make a copy content of one or more files in ~~the~~ ter
 * 2- **-n**  and **-b** are 2 options available together then command should give you an ~~error~~
 
 
+# Results 
 
 
+*  <img align="center" alt="GIF" src="./images/1.png" width="100%" height="320" />
+
+ * <img align="center" alt="GIF" src="./images/2.png" width="100%" height="320" />
+
+
+  
+# using -b cammand
+
+*   <img align="center" alt="GIF" src="./images/4.png" width="100%" height="320" />
+
+# using -n cammand 
+* <img align="center" alt="GIF" src="./images/5.png" width="100%" height="320" />
+
+# using  -b -s cammand 
+* <img align="center" alt="GIF" src="./images/3.png" width="100%" height="320" />
+
+
+# using -n -b cammand 
+* <img align="center" alt="GIF" src="./images/6.png" width="100%" height="320" />
+
+# node inbuild cammands
+
+* <img align="center" alt="GIF" src="./images/7.png" width="100%" height="320" />
+
+* <img align="center" alt="GIF" src="./images/8.png" width="100%" height="320" />
 
 ## Technology 👇
 -JavaScript 
