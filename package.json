@@ -1,0 +1,23 @@
+{
+  "name": "wcat",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Wcat 🚀🚀 💥</h1>",
+  "main": "wcat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukeshdani/Wcat-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mukeshdani/Wcat-/issues"
+  },
+  "bin":{
+    "wcatHW":"wcat.js"
+  },
+  "homepage": "https://github.com/mukeshdani/Wcat-#readme"
+}
