@@ -36,3 +36,13 @@ for (let i = 0; i < Getfiles.length; i++) {
         return;
     }
 }
+
+
+// yhe pe hm read dkr rhe hai ki file mai kya data hai 
+let data = "";
+for (let i = 0; i < Getfiles.length; i++) {
+    //buffer milega wse directly concat vi kr skte the kissi string ke sath krke 
+    let bufferData = fs.readFileSync(Getfiles[i]);
+    data += bufferData + "\r\n";
+}
+console.log(data)
