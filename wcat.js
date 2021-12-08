@@ -89,11 +89,13 @@ let isBPresent = Getoptions.includes("-b");
 if (isBPresent == true) {
 
     let counter = 1
+    
     for (let i = 0; i < GetContent.length; i++) {
         if (GetContent[i] != "") {
-            // contentArr[i] = `${i + 1} ${contentArr[i]} `;
+
             GetContent[i] = `${counter} ${GetContent[i]}`;
             counter++;
+
         }
     }
 }
