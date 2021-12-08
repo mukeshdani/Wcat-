@@ -45,4 +45,56 @@ for (let i = 0; i < Getfiles.length; i++) {
     let bufferData = fs.readFileSync(Getfiles[i]);
     data += bufferData + "\r\n";
 }
-console.log(data)
+//console.log(data)
+
+
+let GetContent = data.split("\r\n");
+//console.log(GetContent);
+
+
+// now work on my first  -s cammand 
+let isSPreset = Getoptions.includes("-s");
+if (isSPreset == true) {
+    for (let i = 1; i <GetContent.length; i++) {
+        if (GetContent[i] == "" && GetContent[i - 1] == "") {
+            GetContent[i] = null;
+        } else if (GetContent[i] == "" && GetContent[i - 1] == null) {
+            GetContent[i] = null;
+        }
+    }
+    let tempArr = [];
+    for (let i = 0; i < GetContent.length; i++) {
+        if (GetContent[i] != null) {
+            tempArr.push(GetContent[i])
+        }
+    }
+    GetContent= tempArr;
+}
+console.log("`````````````````````")
+
+//console.log(GetContent.join("\n"));
+
+// now second -n cammand 
+let isNPresent = Getoptions.includes("-n");
+if (isNPresent == true) {
+    for (let i = 0; i < GetContent.length; i++) {
+        GetContent[i] = `${i + 1} ${GetContent[i]} `;
+    }
+}
+
+//console.log(GetContent.join("\n"));
+
+// now -b cammand 
+let isBPresent = Getoptions.includes("-b");
+if (isBPresent == true) {
+
+    let counter = 1
+    for (let i = 0; i < GetContent.length; i++) {
+        if (GetContent[i] != "") {
+            // contentArr[i] = `${i + 1} ${contentArr[i]} `;
+            GetContent[i] = `${counter} ${GetContent[i]}`;
+            counter++;
+        }
+    }
+}
+console.log(GetContent.join("\n"));
